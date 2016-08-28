@@ -316,7 +316,7 @@ database.addFileCron = function(file, directory, callback){
   // grab pdf info
   if(!which('pdfinfo')){
     return callback({
-      messagge : 'server missing dependency. Install Brew then type "brew install poppler"'
+      message : 'server missing dependency. Install Brew then type "brew install poppler"'
     }, null);
   }
   console.log(file);
