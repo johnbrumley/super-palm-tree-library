@@ -12,6 +12,9 @@
 
 require('shelljs/global');
 var mongoose = require('mongoose');
+// plug in native promises
+mongoose.Promise = global.Promise;
+
 var fs = require('fs');
 var mime = require('mime');
 var database = {
